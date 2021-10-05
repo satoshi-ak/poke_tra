@@ -2,27 +2,27 @@
 
 #　開発言語
 
--- Runy 3.0.1
--- rails 6.0.3
+- Runy 3.0.1
+- rails 6.0.3
 
 # 就業Termの技術
 
--- devise
--- お気に入り機能
--- メッセージ機能
+- devise
+- お気に入り機能
+- メッセージ機能
 
 # カリキュラム外の技術
 
--- gmaps4rails/geocoder（Google Mapの活用
+- gmaps4rails/geocoder（Google Mapの活用
 
 # 実行手順
 
--- $ git clone git@github.com:satoshi-ak/poke_tra.git
--- $ cd poke_tra
--- $ bundle install
--- $ rails db:creste
--- $ rails db:migrate
--- $rails s
+- $ git clone git@github.com:satoshi-ak/poke_tra.git
+- $ cd poke_tra
+- $ bundle install
+- $ rails db:creste
+- $ rails db:migrate
+- $rails s
 
 # カタログ設計
 
