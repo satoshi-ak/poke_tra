@@ -35,7 +35,7 @@ https://docs.google.com/spreadsheets/d/10z9tp5ozc-hqq_R4GlDE6rVnE3EBiVM5gaq4HgAB
 
 https://app.diagrams.net/#G1SUamqhFfCTeU_hmINJ9TX7o0jGYWXl5f
 
-![スクリーンショット 2021-10-07 14 53 16](https://user-images.githubusercontent.com/83895924/136327896-1d57efc3-d84f-4457-9952-985f2c6bbd10.png)
+![スクリーンショット 2021-10-07 19 23 12](https://user-images.githubusercontent.com/83895924/136366853-a673a579-b5f8-41bc-999c-2c9dc027c124.png)
 
 
 # 画面遷移図
