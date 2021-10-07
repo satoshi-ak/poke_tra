@@ -9,21 +9,20 @@
 
 - devise
 - お気に入り機能
-- メッセージ機能
 
 # カリキュラム外の技術
 
 - gmaps4rails/geocoder（Google Mapの活用
 
 # 実行手順
-
+```
 - $ git clone git@github.com:satoshi-ak/poke_tra.git
 - $ cd poke_tra
 - $ bundle install
 - $ rails db:creste
 - $ rails db:migrate
 - $rails s
-
+```
 # カタログ設計
 
 https://docs.google.com/spreadsheets/d/1_olbbeaV6dJDOF4hql9Phb1dqrjsKXkZZXXJG4Tl6qo/edit#gid=0
@@ -36,14 +35,14 @@ https://docs.google.com/spreadsheets/d/10z9tp5ozc-hqq_R4GlDE6rVnE3EBiVM5gaq4HgAB
 
 https://app.diagrams.net/#G1SUamqhFfCTeU_hmINJ9TX7o0jGYWXl5f
 
-![スクリーンショット 2021-10-07 1 59 26](https://user-images.githubusercontent.com/83895924/136250942-33ae4696-c5b0-4661-8381-be450f1588a5.png)
+![スクリーンショット 2021-10-07 14 53 16](https://user-images.githubusercontent.com/83895924/136327896-1d57efc3-d84f-4457-9952-985f2c6bbd10.png)
 
 
 # 画面遷移図
 
 https://app.diagrams.net/#G13MwFVYMoeYWb6o6uwFp0qKWFoK76MIAp
 
-![スクリーンショット 2021-10-07 2 00 22](https://user-images.githubusercontent.com/83895924/136250644-42fa273f-ccf9-4d04-9c4f-a0b6fea248d2.png)
+![スクリーンショット 2021-10-07 14 53 36](https://user-images.githubusercontent.com/83895924/136327600-289fc6ec-8c4f-44ad-989b-d067693275a2.png)
 
 # ワイヤーフレーム
 
