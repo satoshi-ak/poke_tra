@@ -16,12 +16,12 @@
 
 # 実行手順
 ```
-- $ git clone git@github.com:satoshi-ak/poke_tra.git
-- $ cd poke_tra
-- $ bundle install
-- $ rails db:creste
-- $ rails db:migrate
-- $rails s
+ $ git clone git@github.com:satoshi-ak/poke_tra.git
+ $ cd poke_tra
+ $ bundle install
+ $ rails db:creste
+ $ rails db:migrate
+ $rails s
 ```
 # カタログ設計
 
