@@ -8,6 +8,7 @@ class ArticlesController < ApplicationController
 
   # GET /articles/1 or /articles/1.json
   def show
+    @favorite = current_user.favorites.find_by(article_id: @article.id)
   end
 
   # GET /articles/new
