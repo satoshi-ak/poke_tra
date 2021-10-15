@@ -8,4 +8,5 @@ class User < ApplicationRecord
   validates :profile, length: { maximum: 200 }
   mount_uploader :image, ImageUploader
   has_many :articles
+  has_many :favorites, dependent: :destroy
 end

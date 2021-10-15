@@ -1,4 +1,3 @@
-<p id="notice"><%= notice %></p>
 
 <p>
   <strong>Title:</strong>
@@ -20,5 +19,12 @@
   <%= @article.user_id %>
 </p>
 
+<% if @favorite.present? %>
+    <%= link_to 'お気に入り解除する', favorite_path(id: @article.id), method: :delete, class: 'btn btn-danger' %>
+  <% else %>
+    <%= link_to 'お気に入りする', favorites_path(article_id: @article.id), method: :post, class: 'btn btn-primary' %>
+  <% end %>
+  <% if current_user.id == @article.user_id %>
+  <% end %>
 <%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Back', articles_path %>
