@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :articles
   root to: 'tops#index'
   get "users/show" => "users#show"
