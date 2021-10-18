@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
+  
   def show
     @user = current_user
+    @articles = @user.articles.page(params[:page]).per(5)
   end
   def update
     if @user.update(user_params)

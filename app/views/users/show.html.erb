@@ -33,10 +33,11 @@
   </tbody>
 </table>
 
-<% if current_user.try(:admin?) %>
+  <% if current_user.try(:admin?) %>
     <%= link_to '管理者ログイン', rails_admin_path %>
   <% end %>
 
-  <%= link_to '一覧', articles_path %>
+<%= link_to '一覧', articles_path %>
 
 <%= link_to 'プロフィール変更', edit_user_registration_path %>
+<%= paginate @articles %>
