@@ -5,6 +5,8 @@ class ArticlesController < ApplicationController
   # GET /articles or /articles.json
   def index
     @articles = Article.all
+    @q = Article.ransack(params[:q])
+    @articles = @q.result(distinct: true)
   end
 
   # GET /articles/1 or /articles/1.json
@@ -67,6 +69,6 @@ class ArticlesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def article_params
-      params.require(:article).permit(:title, :content, :image, :user_id, :image_cache, :image)
+      params.require(:article).permit(:title, :content, :image, :user_id, :image_cache, :image, :country)
     end
 end
