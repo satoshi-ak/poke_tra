@@ -1,5 +1,5 @@
-<h1>Articles</h1>
-  
+<h1>Travel Information </h1>
+
   <%= search_form_for @q do |f| %>
   <%= f.label :title_or_country, "キーワード検索" %>
   <%= f.search_field :title_or_country_cont %>
@@ -7,8 +7,6 @@
   <%= f.submit "検索" %>
 <% end %>
 
-
-<h3><%= link_to 'お気に入り一覧', favorites_path(@user) %></h3>
 
 <table>
   <thead>
@@ -28,9 +26,9 @@
         <td><%= image_tag article.image.url,style:'width:100px;height:100px' %></td>
         <td><%= article.title %></td>
         <td><%= article.content %></td>
-        <td><%= article.user.name %></td>
+        <td><%= link_to "#{article.user.name}", user_path(article.user.id) %></td>
         <td><%= article.country %></td>
-        <td><%= link_to 'Show', article %></td>
+        <td><%= link_to 'Show', article_path(article.id) %></td>
         <!--<td><%= link_to 'Edit', edit_article_path(article) %></td>-->
         <!--<td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
       </tr>
