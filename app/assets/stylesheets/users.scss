@@ -1,3 +1,122 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+h1 {
+  text-align: center;
+  padding: 1.5rem;
+  font-weight: 600;
+  width: 100%;
+  margin: 1.5rem auto;
+  color: #fff;
+  background-color: #333;
+  border-bottom: 2px solid #333;
+}
+.frex_box {
+  margin: 4rem auto;
+  display: flex;
+  justify-content: center;
+  width: 780px;
+  .flex {
+    width: 50%;
+  }
+  .user_info{
+    width: 100%;
+    width: 50%;
+    p {
+      text-align: left;
+    }
+    .user_content {
+      border-bottom: 2px solid #333;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .user_ditail {
+      padding-left: 1rem;
+    }
+    .favo {
+      width: 40%;
+      padding: 1rem;
+      background-color: rgb(12, 8, 124);
+      border-radius: 6px;
+      margin: 0;
+    }
+    a {
+      color: #fff;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+h2.user_title {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 1.5rem auto;
+  padding: 0.3rem 0;
+  text-align: center;
+  width: 780px;
+}
+
+
+.articl_Edit {
+  margin: 1rem;
+  background-color: rgb(86, 86, 86);
+  border-radius: 8px;
+  padding: 6px 10px;
+  a {
+    color: #fff;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.articl_Destroy {
+  margin: 1rem;
+  background-color: rgb(171, 31, 18);
+  border-radius: 8px;
+  padding: 6px 10px;
+  a {
+    color: #fff;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+footer {
+  width: 100%;
+  background-color:#262628;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+.frex_box{
+  text-align: center;
+}
+.frex {
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  margin : 0 auto 
+}
+.pagination {
+  text-align: center;
+}
+.nav_wrap {
+  display: flex;
+  justify-content: center;
+  margin: 4rem auto 0;
+  p {
+    font-size: 16px;
+    padding-right: 1rem;
+    &::after {
+      content: "｜";
+      padding-left: 1rem;
+    }
+  }
+  a {
+    color: #262628;
+  }
+}

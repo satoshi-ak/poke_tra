@@ -1,8 +1,8 @@
 <div class="container">
-  </div><h1 class="title">Poke Tra</h1>
+  <h2 class="top-title">POKE TRA</h2>
     <nav class="menu">
       <ul>
-        <li>top</li>
+        <li></li>
         <li>menu1</li>
         <li>menu2</li>
       </ul>
@@ -15,12 +15,14 @@
       </ul>
     </div>
     <div class="topic">
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+        <p><%= link_to 'ゲストログイン（閲覧用）', users_guest_sign_in_path, method: :post %></p>
+        <p><%= link_to "新規登録", new_user_registration_path %></p>
+        <p><%= link_to "ログイン", new_user_session_path %></p>
     </div>
   </article>
+</div>
 
-<%= link_to 'ゲストログイン（閲覧用）', users_guest_sign_in_path, method: :post %>
+
+
+
+

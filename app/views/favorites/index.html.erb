@@ -1,15 +1,30 @@
 <h1>お気に入り一覧</h1>
-<table>
-  <tr>
-    <th>user</th>
-    <th>image</th>
-    <th>content</th>
-  <tr/>
-  <% @favorite.each do |favorite| %>
-    <tr>
-      <td><%= favorite.article.user.name %></td>
-      <td><%= image_tag(favorite.article.image.url, size: '100x100') %></td>
-      <td><%= favorite.article.content %></td>
-      <td><%= link_to '詳細を確認', article_path(favorite.article.id) %></td>  </tr>
-  <% end %>
-</table>
+   
+
+<% @favorite.each do |favorite| %>
+      <li class="flex">
+        <p class="img">
+         <%= image_tag(favorite.article.image.url, size: '100x100') %>
+        </p>
+        <div class="right item">
+          <p class="articl_country"><%= favorite.article.country %></p>
+          <h3 class="articl_title"><%= favorite.article.title %></h3>
+          <div class="data_group">
+            <p class="articl_text content">内容:<%= favorite.article.content %></p>
+          <div class="sub_text">
+            <p class="articl_text articl_user"><%= favorite.article.user.name %></p>
+            <p class="articl_text articl_show"><%= link_to '詳細を確認', article_path(favorite.article.id) %></p>
+          </div>
+        </div>
+      </li>
+    <% end %>
+       <p class="back_link"><%= link_to 'Back', articles_path %></p>
+
+
+
+
+
+
+
+
+  

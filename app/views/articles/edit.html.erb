@@ -1,6 +1,8 @@
-<h1>Editing Article</h1>
+<h1>編集画面</h1>
 
 <%= render 'form', article: @article %>
 
-<%= link_to 'Show', @article %> |
-<%= link_to 'Back', articles_path %>
+<div class='edit-link'>
+    <p><%= link_to 'Show', @article %></p> 
+    <p><%= link_to 'Back', user_path(current_user.id)%></p>
+</div>
