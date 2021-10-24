@@ -10,20 +10,31 @@
   </head>
 
   <body>
-  
-    <% if user_signed_in? %>
-      <%= link_to "ユーザーページ",user_path(current_user.id) %>
-      <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-    <% else %>
-      <%= link_to "新規登録", new_user_registration_path %>
-      <%= link_to "ログイン", new_user_session_path %>
-    <% end %>
-    <% if notice %>
-      <p class="alert alert-notice"><%= notice %></p>
-    <% end %>
-    <% if alert %>
-      <p class="alert alert-error"><%= alert %></p>
-    <% end %>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <%= link_to image_tag('/images/poketra_logo.PNG'), '/' %>
+           <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+              <% if user_signed_in? %>
+                <li class="nav-text"><%= link_to "マイページ", user_path(current_user.id) %></li>
+                <li class="nav-text"><%= link_to '新規投稿', new_article_path %></li>
+                <li class="nav-text"><%= link_to"ログアウト", destroy_user_session_path, method: :delete %></li>
+              <% else %>
+                <li class="nav-text"><%= link_to "新規登録", new_user_registration_path %></li>
+                <li class="nav-text"><%= link_to "ログイン", new_user_session_path %></li>
+              <% end %>
+            </li>
+          </ul>
+        <% if notice %>
+         <p class="alert alert-notice"><%= notice %></p>
+        <% end %>
+        <% if alert %>
+         <p class="alert alert-error"><%= alert %></p>
+        <% end %>
+    </header>
     <%= yield %>
+    <footer>
+      <p>© 2021 POKE TRA.</p>
+    </footer>
   </body>
 </html>

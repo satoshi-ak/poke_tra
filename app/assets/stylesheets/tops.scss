@@ -1,3 +1,23 @@
 // Place all the styles related to the tops controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));   
+}
+.background {
+  background-image: image-url('IMG_4348.JPG');
+}               
+.container {
+  text-align: center;
+}
+.topic {
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+}

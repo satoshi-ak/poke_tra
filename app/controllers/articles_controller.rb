@@ -7,7 +7,7 @@ class ArticlesController < ApplicationController
     @articles = Article.all
     @q = Article.ransack(params[:q])
     @articles = @q.result(distinct: true)
-    @articles = @articles.page(params[:page]).per(5)
+    @articles = @articles.page(params[:page]).per(3)
   end
 
   # GET /articles/1 or /articles/1.json
