@@ -1,23 +1,22 @@
 <div class="container">
-  <h2 class="top-title">POKE TRA</h2>
-    <nav class="menu">
-      <ul>
-        <li></li>
-        <li>menu1</li>
-        <li>menu2</li>
-      </ul>
-    </nav>
+  <h2 class="top-title">WELCOME TO POKE TRA</h2>
   <article>
     <div class="contents">
       <ul>
-        <li>contents1</li>
-        <li>contents2</li>
+        <li>あなたの欲しい旅の情報がみつかる。</li>
       </ul>
     </div>
+    <div class="top-image">
+      <li></li>
+    </div>
     <div class="topic">
-        <p><%= link_to 'ゲストログイン（閲覧用）', users_guest_sign_in_path, method: :post %></p>
-        <p><%= link_to "新規登録", new_user_registration_path %></p>
-        <p><%= link_to "ログイン", new_user_session_path %></p>
+      <p><button type="button" class="btn btn-primary"><%= link_to "新規登録", new_user_registration_path %></button></p>
+      <p><button type="button" class="btn btn-primary"><%= link_to "ログイン", new_user_session_path %></button></p>
+    </div>
+    <div class="gs">
+      <ul>
+        <li><button type="button" class="btn btn-success"><%= link_to 'ゲストログイン（閲覧用）', users_guest_sign_in_path, method: :post %></button></li>
+      </ul>
     </div>
   </article>
 </div>

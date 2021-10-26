@@ -17,29 +17,29 @@
   </div>
 </div>
 <h2 class="user_title"> 投稿一覧 <h2>
-    <% @articles.each do |article| %>
-      <li class="flex">
-        <p class="img">
-         <%= image_tag article.image.url,style:'width:200px;height:200px;' %>
-        </p>
-        <div class="right item">
-          <p class="articl_country"><%= article.country %></p>
-          <h3 class="articl_title"><%= article.title %></h3>
-          <div class="data_group">
-            <p class="articl_text content">内容:<%= article.content %></p>
-          </div>
-          <div class="sub_text">
-            <p class="articl_text articl_user"><%= link_to "#{article.user.name}", user_path(article.user.id) %></p>
-            <p class="articl_text articl_show"><%= link_to 'Show', article_path(article.id) %></p>
-            <% if @user.id == current_user.id %>
-            <p class="articl_text articl_Edit"><%= link_to 'Edit', edit_article_path(article) %></p>
-            <p class="articl_text articl_Destroy"><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></p>
-            <% end %> 
-          </div>
+  <% @articles.each do |article| %>
+    <li class="flex">
+      <p class="img">
+        <%= image_tag article.image.url,style:'width:200px;height:200px;' %>
+      </p>
+      <div class="right item">
+        <p class="articl_country"><%= article.country %></p>
+        <h3 class="articl_title"><%= article.title %></h3>
+        <div class="data_group">
+          <p class="articl_text content">内容:<%= article.content %></p>
         </div>
-      </li>
-    <% end %> 
-    <%= paginate @articles %>
+        <div class="sub_text">
+          <p class="articl_text articl_user"><%= link_to "#{article.user.name}", user_path(article.user.id) %></p>
+          <p class="articl_text articl_show"><%= link_to 'Show', article_path(article.id) %></p>
+          <% if @user.id == current_user.id %>
+          <p class="articl_text articl_Edit"><%= link_to 'Edit', edit_article_path(article) %></p>
+          <p class="articl_text articl_Destroy"><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+      　　<% end %> 
+        </div>
+      </div>
+    </li>
+  <% end %> 
+<%= paginate @articles %>
     <div class="nav_wrap"> 
         <% if current_user.try(:admin?) %>
         <p><%= link_to '管理者ログイン', rails_admin_path %></p>

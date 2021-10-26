@@ -5,6 +5,7 @@
 /**********************
  記事一覧ページ
  *********************/
+
 .search_wrap {
   margin: 0 auto;
   padding: 2rem;
@@ -136,9 +137,7 @@
 /**********************
 Article登録ページ
  *********************/
-.field {
-  text-align: center;
-}
+
 .actions{
   text-align: center;
 }
@@ -157,23 +156,34 @@ td {
 .fav {
   text-align: center;
 }
-
 /**********************
 編集画面
  *********************/
- .field-form {
-   display: flex;
-   justify-content: center;
- }
- .label input,textarea{
-   width: 480px;
-   margin-left: 2rem;
- }
-.edit-link {
+.area-form input{
+  width: 800px;
   display: flex;
   justify-content: center;
 }
-.edit-link p {
+.area-form textarea{
+  width: 800px;
+  display: flex;
+  justify-content: center;
+}
+.area-form p{
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+.edit-link {
+  display: flex;
+  justify-content: center;
   padding: 1.5rem;
-  
+  margin: 1px;
+}
+.edit-link p {
+  margin:  1px;
+}
+
+.btn-dark a {
+  color: #f3f4f7; 
 }
