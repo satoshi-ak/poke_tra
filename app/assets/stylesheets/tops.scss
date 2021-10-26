@@ -7,17 +7,45 @@ html {
   min-height: 100%;
 }
 body {
-  text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));   
+  background-image: image-url('IMG_7122.JPG'); 
+  background-position: top center;
+  margin: 0;
 }
-.background {
-  background-image: image-url('IMG_4348.JPG');
-}               
+.top-title {
+  font-size:100px;
+  color: black;
+  font-weight:bold;
+  text-align:center;
+  width: 80%;
+  margin: 0 auto;
+}
 .container {
   text-align: center;
+}
+.contents {
+  font-size: 50px;
+  color: black;
 }
 .topic {
   display: flex;
   justify-content: center;
   padding: 0 1rem;
+  margin-top: 10rem;
+}
+.topic p {
+  color: black;
+  margin: 1rem;
+}
+.topic a {
+  color: black;
+}
+.navbar img {
+  height: auto;
+  width: 60px;
+}
+.gs a {
+  color: black;
+}
+.top-image {
+  width: 10%;
 }

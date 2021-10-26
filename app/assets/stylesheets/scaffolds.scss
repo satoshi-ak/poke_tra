@@ -1,10 +1,4 @@
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  text-align: center;
-}
+
 li{
   list-style:none;
 }
@@ -17,24 +11,9 @@ ul{
 table{
   margin: auto;
 }
-.btn{
-  margin: 5px;
-}
-.btn a{
-  color: #000;
-}
 #user_image{
   margin: auto;
 }
 p {
-  text-align: center;
-}
-footer {
-  width: 100%;
-  background-color:#262628;
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  bottom: 0;
   text-align: center;
 }
