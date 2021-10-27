@@ -13,6 +13,14 @@
   <dt class="detail_content">User</dt>
   <dd class="contents"><%= @article.user.name %></dd>
 </dl>
+<div class="fav">
+  <% if @favorite.present? %>
+    <%= link_to 'お気に入り解除する', favorite_path(id: @article.id), method: :delete, class: 'btn btn-danger' %>
+  <% else %>
+    <%= link_to 'お気に入りする', favorites_path(article_id: @article.id), method: :post, class: 'btn btn-primary' %>
+  <% end %>
+  <button type="button" class="btn btn-dark"><%= link_to 'Back', articles_path %></button>
+</div> 
 <h3 class="map_title">Map</h3>
 <div class="google_map">
   <script type="text/javascript">
@@ -50,18 +58,4 @@
 
 <br>
   <br>
-    <br>
-      <br>
-        <br>
-<div class="fav">
-  <% if @favorite.present? %>
-    <%= link_to 'お気に入り解除する', favorite_path(id: @article.id), method: :delete, class: 'btn btn-danger' %>
-  <% else %>
-    <%= link_to 'お気に入りする', favorites_path(article_id: @article.id), method: :post, class: 'btn btn-primary' %>
-  <% end %>
-  <button type="button" class="btn btn-dark"><%= link_to 'Back', articles_path %></button>
-</div> 
-<br>
-  <br>
-    <br>
-      <br>
+    

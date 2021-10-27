@@ -5,11 +5,13 @@
 /**********************
  記事一覧ページ
  *********************/
-
+.articles {
+  background-color: darkgray;
+}
 .search_wrap {
   margin: 0 auto;
-  padding: 2rem;
-  background-color: #f3f4f7;
+  padding: 0.5rem;
+  background-color: #e6e6e6;
   h2.search_title {
     text-align: center;
     margin: 1rem;
@@ -29,7 +31,7 @@
   width: 60%;
   margin: 1rem auto;
   padding: 1.5rem;
-  background-color: #fff;
+  background-color: rgb(224, 224, 224);
   border-radius: 8px;
   .item{
     margin-left: 2rem;
@@ -117,6 +119,7 @@
     padding: 1rem;
     border-bottom: 1px solid rgb(170, 170, 170);
     margin: 0;
+    font-size: 16px;
   }
 }
 .map_title {
@@ -178,12 +181,21 @@ td {
   display: flex;
   justify-content: center;
   padding: 1.5rem;
-  margin: 1px;
 }
 .edit-link p {
-  margin:  1px;
+  margin:  2px;
 }
-
+.btn-primary {
+  margin: 20px;
+}
+.btn-primary a {
+  color: black;
+  margin: 20px;
+}
+.btn-light a {
+  color: black;
+}
 .btn-dark a {
-  color: #f3f4f7; 
+  color: black;
+
 }

@@ -13,7 +13,19 @@
  *= require_tree .
  *= require_self
  */
- 
+
+
+ html {
+  position: relative;
+  min-height: 100%;
+}
+body  {
+  background-color: goldenrod;
+  /* background-image: url('IMG_4108.JPG');  */
+  background-position: top center;
+  width: 100%;
+  height: auto;
+}
  .field  {
   text-align: center;
 }
@@ -32,6 +44,6 @@
 .nav-text {
   padding: 0 1rem;
 }
-.nav-text a {
+.nav-link a {
   color: aliceblue;
 }

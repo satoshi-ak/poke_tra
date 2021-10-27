@@ -16,6 +16,14 @@
 
   </div>
 </div>
+<div class="nav_wrap"> 
+  <% if current_user.try(:admin?) %>
+   <p><%= link_to '管理者ログイン', rails_admin_path %></p>
+  <% end %>
+    <p><%= link_to '一覧', articles_path %></p>
+    <p><%= link_to '新規投稿', new_article_path %></p>
+    <p><%= link_to 'プロフィール変更', edit_user_registration_path %></p>
+  </div>
 <h2 class="user_title"> 投稿一覧 <h2>
   <% @articles.each do |article| %>
     <li class="flex">
@@ -40,17 +48,4 @@
     </li>
   <% end %> 
 <%= paginate @articles %>
-    <div class="nav_wrap"> 
-        <% if current_user.try(:admin?) %>
-        <p><%= link_to '管理者ログイン', rails_admin_path %></p>
-        <% end %>
-        <p><%= link_to '一覧', articles_path %></p>
-        <p><%= link_to '新規投稿', new_article_path %></p>
-        <p><%= link_to 'プロフィール変更', edit_user_registration_path %></p>
-    </div>
-      <br>
-    <br>
-  <br>
 <br>
-
-  
