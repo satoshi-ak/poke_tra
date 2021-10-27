@@ -2,20 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  background-image: image-url('IMG_7122.JPG'); 
+.tops {
+  background-image: url('IMG_7122.JPG'); 
   background-position: top center;
-  margin: 0;
 }
 .top-title {
   font-size:100px;
   color: black;
-  font-weight:bold;
-  text-align:center;
+  font-weight: bold;
+  text-align: center;
   width: 80%;
   margin: 0 auto;
 }
