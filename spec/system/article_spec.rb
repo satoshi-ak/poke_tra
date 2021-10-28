@@ -6,7 +6,6 @@ RSpec.describe '記事投稿機能', type: :system do
       visit new_user_session_path
       fill_in "Eメール", with: "user01@test.com"
       fill_in "パスワード", with: "password"
-      #binding.irb
       click_button 'ログイン'
     end
     describe '新規作成機能' do

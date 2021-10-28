@@ -1,5 +1,8 @@
 ja:
   activerecord:
+    models:
+      article: 情報
+      favorite: お気に入り
     errors:
       messages:
         record_invalid: 'バリデーションに失敗しました: %{errors}'
@@ -204,4 +207,3 @@ ja:
       long: "%Y/%m/%d %H:%M"
       short: "%m/%d %H:%M"
     pm: 午後
-  

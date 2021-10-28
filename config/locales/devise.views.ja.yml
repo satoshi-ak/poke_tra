@@ -1,5 +1,9 @@
 ja:
   activerecord:
+    models:
+      user: ユーザー
+      article: 情報
+      favorite: お気に入り
     attributes:
       user:
         name: 名前

@@ -49,7 +49,7 @@
 
   article1 = Article.create!(
     title: "Route66",
-    content: "midpoint",
+    content: "Route66の中間地点",
     image: open("./app/assets/images/IMG_7835.jpg"),
     user_id: user1.id,
     country: "アメリカ",
@@ -58,8 +58,8 @@
 
   article2 = Article.create!(
     title: "キューバ",
-    content: "キューバ",
-    image: open("./app/assets/images/IMG_7835.jpg"),
+    content: "カリビアンブルーが美しいリゾート",
+    image: open("./app/assets/images/IMG_7827.jpg"),
     user_id: user2.id,
     country: "キューバ",
     address: "habana",
@@ -67,7 +67,7 @@
 
   article3 = Article.create!(
     title: "ウユニ塩湖",
-    content: "塩湖",
+    content: "「死ぬまでに見たい絶景」ウユニ塩湖",
     image: open("./app/assets/images/Uyuni.JPG"),
     user_id: user3.id,
     country: "ボリビア",
@@ -75,8 +75,8 @@
   )
 
   article4 = Article.create!(
-    title: "イースター島",
-    content: "モアイ像",
+    title: "イースター島までのアクセス",
+    content: "チリから「ラン航空」でやく５時間のフライト。",
     image: open("./app/assets/images/Moai.jpg"),
     user_id: user4.id,
     country: "チリ",
@@ -84,8 +84,8 @@
   )
 
   article5 = Article.create!(
-    title: "マチュ・ピチュ",
-    content: "遺跡",
+    title: "謎につつまれた天空都市",
+    content: "マチュピチュは南米ペルーのアンデス山脈、標高約2,450mの尾根に位置する古代インカ帝国の遺跡",
     image: open("./app/assets/images/IMG_8177.jpg"),
     user_id: user5.id,
     country: "ペルー",

@@ -5,8 +5,7 @@ FactoryBot.define do
     password {'password'}
     password_confirmation {'password'}
     image {"./app/assets/images/IMG_7835.jpg"}
-    country {'アメリカ'}
-    address {'アメリカ'}
+    profile {'よろしく'}
     admin{ false }
   end
   factory :second_user, class: User do
@@ -15,8 +14,7 @@ FactoryBot.define do
     password {'password'}
     password_confirmation {'password'}
     image {"./app/assets/images/IMG_7835.jpg"}
-    country {'アメリカ'}
-    address {'アメリカ'}
+    profile {'よろしく'}
     admin{ true }
   end
   factory :third_user,class: User do
@@ -25,8 +23,7 @@ FactoryBot.define do
     password {'password'}
     password_confirmation {'password'}
     image {"./app/assets/images/IMG_7835.jpg"}
-    country {'アメリカ'}
-    address {'アメリカ'}
+    profile {'よろしく'}
     admin{ false }
   end
 end
