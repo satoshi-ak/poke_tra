@@ -5,20 +5,26 @@
       <div class="contents">
         <ul>
           <li>あなたの欲しい旅の情報がみつかる。</li>
+          <li class="disc">POKETRA(ポケトラ)は、旅をしながらその場で欲しい情報が手に入る。<br>情報収集に時間をかけたくないあなたに！<br>おすすめの情報収集サイトです。</li>
         </ul>
       </div>
       <div class="top-image">
         <li></li>
       </div>
-      <div class="topic">
-        <p><button type="button" class="btn btn-primary"><%= link_to "新規登録", new_user_registration_path %></button></p>
-        <p><button type="button" class="btn btn-primary"><%= link_to "ログイン", new_user_session_path %></button></p>
-      </div>
-      <div class="gs">
-        <ul>
-          <li><button type="button" class="btn btn-success"><%= link_to 'ゲストログイン（閲覧用）', users_guest_sign_in_path, method: :post %></button></li>
-        </ul>
-      </div>
+      <% if user_signed_in? %>
+      <% else %>
+        <div class="topic">
+          <p><button type="button" class="btn btn-primary"><%= link_to "新規登録", new_user_registration_path %></button></p>
+          <p><button type="button" class="btn btn-primary"><%= link_to "ログイン", new_user_session_path %></button></p>
+        </div>
+        <div class="gs">
+          <ul>
+            <li><button type="button" class="btn btn-success"><%= link_to 'ゲストログイン（閲覧用）', users_guest_sign_in_path, method: :post %></button></li>
+            <br>
+            <li><button type="button" class="btn btn-success"><%= link_to '管理者ゲストログイン', users_admin_guest_sign_in_path, method: :post %></button></li>
+          </ul>
+        </div>
+      <% end %>
     </article>
   </div>
 </body>

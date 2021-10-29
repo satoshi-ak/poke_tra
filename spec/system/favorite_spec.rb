@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'お気に入り機能', type: :system do
+RSpec.describe 'Favorite', type: :system do
   describe 'お気に入り機能' do
     before do
       @user = FactoryBot.create(:user)

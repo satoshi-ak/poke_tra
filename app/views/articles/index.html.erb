@@ -2,7 +2,7 @@
   <h2 class="search_title">Travel Information </h2>
   <div class="search_box" >
     <%= search_form_for @q do |f| %>
-    <%= f.label :title_or_country, "キーワード検索" %>
+    <%= f.label :title_or_country, "目的地別検索" %>
     <%= f.search_field :title_or_country_cont %>
 
     <%= f.submit "検索" %>

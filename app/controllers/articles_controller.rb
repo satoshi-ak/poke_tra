@@ -1,6 +1,7 @@
 class ArticlesController < ApplicationController
   before_action :authenticate_user!, only: [:new, :edit, :update, :destroy]
   before_action :set_article, only: %i[ show edit update destroy ]
+  before_action :own_user, only: [:edit, :update, :destroy]
   
   # GET /articles or /articles.json
   def index
@@ -22,6 +23,7 @@ class ArticlesController < ApplicationController
 
   # GET /articles/1/edit
   def edit
+    
   end
 
   # POST /articles or /articles.json
@@ -72,4 +74,10 @@ class ArticlesController < ApplicationController
     def article_params
       params.require(:article).permit(:title, :content, :image, :user_id, :image_cache, :image, :country, :address, :latitude, :longitude)
     end
+
+    def own_user
+      if current_user.id != @article.user_id
+      redirect_to articles_path, notice: "権限がありません！"
+    end
+  end
 end

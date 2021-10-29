@@ -1,7 +1,7 @@
 <h1>お気に入り一覧</h1>
    
 
-<% @favorite.each do |favorite| %>
+<% @favorites.each do |favorite| %>
       <li class="flex">
         <p class="img">
          <%= image_tag(favorite.article.image.url, size: '100x100') %>
