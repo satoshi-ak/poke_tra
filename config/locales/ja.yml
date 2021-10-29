@@ -3,6 +3,13 @@ ja:
     models:
       article: 情報
       favorite: お気に入り
+    attributes:
+      article:
+        title: タイトル
+        content: 内容
+        image: 写真
+        country: 国
+        address: 住所
     errors:
       messages:
         record_invalid: 'バリデーションに失敗しました: %{errors}'
